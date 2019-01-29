@@ -1,0 +1,10 @@
+MVC
+
+VC to Model: Read/Write
+Model to VC: KVO
+VC to View: IBOutlet
+View to VC: IBAction
+
+MVVM
+
+Coordinator
