@@ -13,8 +13,8 @@ struct Color {
     var red, green, blue: CGFloat
     
     func scaled(_ value: CGFloat) -> Color {
-        return Color(min(red: value*red, 1),
-                     min(green: value * green, 1),
-                     min(blue: value*blue, 1))
+        return Color(red: min(value*red, 1),
+                     green: min(value * green, 1),
+                     blue: min(value*blue, 1))
     }
 }

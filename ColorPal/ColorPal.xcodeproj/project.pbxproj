@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F41A618C21FFF9A5002C3697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A618B21FFF9A5002C3697 /* AppDelegate.swift */; };
-		F41A618E21FFF9A5002C3697 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A618D21FFF9A5002C3697 /* ViewController.swift */; };
+		F41A618E21FFF9A5002C3697 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A618D21FFF9A5002C3697 /* ColorViewController.swift */; };
 		F41A619121FFF9A5002C3697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41A618F21FFF9A5002C3697 /* Main.storyboard */; };
 		F41A619421FFF9A5002C3697 /* ColorPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F41A619221FFF9A5002C3697 /* ColorPal.xcdatamodeld */; };
 		F41A619621FFF9A6002C3697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41A619521FFF9A6002C3697 /* Assets.xcassets */; };
@@ -17,12 +17,16 @@
 		F41A61A321FFFAFA002C3697 /* Color+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A61A221FFFAFA002C3697 /* Color+UIKit.swift */; };
 		F41A61A521FFFBAF002C3697 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A61A421FFFBAF002C3697 /* Formatter.swift */; };
 		F41A61A721FFFDFC002C3697 /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A61A621FFFDFC002C3697 /* ColorViewModel.swift */; };
+		F41A61A922000138002C3697 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A61A822000138002C3697 /* Coordinator.swift */; };
+		F41A61AB22000171002C3697 /* ColorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A61AA22000171002C3697 /* ColorCoordinator.swift */; };
+		F41A61AD22000230002C3697 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A61AC22000230002C3697 /* StoryboardInitializable.swift */; };
+		F41A61AF22000757002C3697 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41A61AE22000757002C3697 /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F41A618821FFF9A5002C3697 /* ColorPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41A618B21FFF9A5002C3697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F41A618D21FFF9A5002C3697 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F41A618D21FFF9A5002C3697 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		F41A619021FFF9A5002C3697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F41A619321FFF9A5002C3697 /* ColorPal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ColorPal.xcdatamodel; sourceTree = "<group>"; };
 		F41A619521FFF9A6002C3697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +36,10 @@
 		F41A61A221FFFAFA002C3697 /* Color+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+UIKit.swift"; sourceTree = "<group>"; };
 		F41A61A421FFFBAF002C3697 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		F41A61A621FFFDFC002C3697 /* ColorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewModel.swift; sourceTree = "<group>"; };
+		F41A61A822000138002C3697 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F41A61AA22000171002C3697 /* ColorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCoordinator.swift; sourceTree = "<group>"; };
+		F41A61AC22000230002C3697 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
+		F41A61AE22000757002C3697 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,16 +73,20 @@
 			isa = PBXGroup;
 			children = (
 				F41A618B21FFF9A5002C3697 /* AppDelegate.swift */,
-				F41A618D21FFF9A5002C3697 /* ViewController.swift */,
+				F41A618D21FFF9A5002C3697 /* ColorViewController.swift */,
 				F41A618F21FFF9A5002C3697 /* Main.storyboard */,
-				F41A61A621FFFDFC002C3697 /* ColorViewModel.swift */,
 				F41A619521FFF9A6002C3697 /* Assets.xcassets */,
 				F41A619721FFF9A6002C3697 /* LaunchScreen.storyboard */,
 				F41A619A21FFF9A6002C3697 /* Info.plist */,
+				F41A61A822000138002C3697 /* Coordinator.swift */,
+				F41A61AA22000171002C3697 /* ColorCoordinator.swift */,
+				F41A61AC22000230002C3697 /* StoryboardInitializable.swift */,
 				F41A619221FFF9A5002C3697 /* ColorPal.xcdatamodeld */,
 				F41A61A021FFFA22002C3697 /* Color.swift */,
 				F41A61A221FFFAFA002C3697 /* Color+UIKit.swift */,
 				F41A61A421FFFBAF002C3697 /* Formatter.swift */,
+				F41A61A621FFFDFC002C3697 /* ColorViewModel.swift */,
+				F41A61AE22000757002C3697 /* Box.swift */,
 			);
 			path = ColorPal;
 			sourceTree = "<group>";
@@ -150,10 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41A61A922000138002C3697 /* Coordinator.swift in Sources */,
 				F41A61A521FFFBAF002C3697 /* Formatter.swift in Sources */,
 				F41A61A321FFFAFA002C3697 /* Color+UIKit.swift in Sources */,
 				F41A61A721FFFDFC002C3697 /* ColorViewModel.swift in Sources */,
-				F41A618E21FFF9A5002C3697 /* ViewController.swift in Sources */,
+				F41A618E21FFF9A5002C3697 /* ColorViewController.swift in Sources */,
+				F41A61AF22000757002C3697 /* Box.swift in Sources */,
+				F41A61AB22000171002C3697 /* ColorCoordinator.swift in Sources */,
+				F41A61AD22000230002C3697 /* StoryboardInitializable.swift in Sources */,
 				F41A61A121FFFA22002C3697 /* Color.swift in Sources */,
 				F41A619421FFF9A5002C3697 /* ColorPal.xcdatamodeld in Sources */,
 				F41A618C21FFF9A5002C3697 /* AppDelegate.swift in Sources */,
