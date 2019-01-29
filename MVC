@@ -6,5 +6,10 @@ VC to View: IBOutlet
 View to VC: IBAction
 
 MVVM
+- View Model = "the command line version of your UI"
+- View Model should not have any UIKit elements in it
+- View is the view + view controller
+
 
 Coordinator
+- Instantiate view model and connect with view controller/tear stuff down
